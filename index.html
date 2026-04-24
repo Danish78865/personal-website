@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Garg | AI & Machine Learning Portfolio</title>
+    <meta name="description" content="Portfolio of Danish Garg, a Computer Science student building AI, machine learning, RAG, automation, and computer vision projects.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#111827',
+                        steel: '#3f5168',
+                        mint: '#2dd4bf',
+                        ember: '#f97316',
+                        cloud: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111827'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='26' font-weight='700' fill='%232dd4bf'%3EDG%3C/text%3E%3C/svg%3E">
+</head>
+<body class="bg-cloud text-ink antialiased">
+    <nav class="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+            <a href="#home" class="text-lg font-extrabold tracking-tight">Danish Garg</a>
+            <div class="hidden items-center gap-7 text-sm font-semibold text-slate-600 md:flex">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#certifications">Certificates</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+            <a href="assets/Danish-Garg-Resume.pdf" class="hidden rounded-md bg-ink px-4 py-2 text-sm font-bold text-white shadow-sm transition hover:bg-steel md:inline-flex" download>
+                Resume
+            </a>
+            <button id="mobile-menu-btn" class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-200 text-slate-700 md:hidden" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white px-5 py-4 md:hidden">
+            <div class="flex flex-col gap-4 text-sm font-semibold text-slate-700">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#certifications">Certificates</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a href="assets/Danish-Garg-Resume.pdf" download>Download Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="relative overflow-hidden pt-28">
+            <div class="absolute inset-x-0 top-0 h-80 bg-[radial-gradient(circle_at_20%_20%,rgba(45,212,191,.22),transparent_34%),radial-gradient(circle_at_82%_16%,rgba(249,115,22,.14),transparent_28%)]"></div>
+            <div class="relative mx-auto grid min-h-[calc(100vh-4rem)] max-w-7xl items-center gap-12 px-5 pb-16 lg:grid-cols-[1.2fr_.8fr] lg:px-8">
+                <div>
+                    <p class="mb-5 inline-flex rounded-md border border-teal-200 bg-white px-3 py-2 text-sm font-semibold text-teal-700 shadow-sm">Computer Science Student | Applied AI & Machine Learning</p>
+                    <h1 class="max-w-4xl text-5xl font-extrabold leading-tight tracking-tight text-ink md:text-7xl">
+                        Hi, I am Danish Garg.
+                    </h1>
+                    <p class="mt-6 max-w-2xl text-xl font-semibold leading-8 text-slate-700">
+                        I build practical AI and machine learning projects that connect models with real use cases.
+                    </p>
+                    <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-600">
+                        I am a Computer Science and Engineering student from Mohali, India, exploring computer vision, generative AI, RAG systems, agents, automation, and data-driven applications. This portfolio shares my projects, experience, education, certificates, and the tools I enjoy working with.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <a href="#projects" class="rounded-md bg-ink px-5 py-3 text-sm font-bold text-white shadow-lg shadow-slate-900/10 transition hover:-translate-y-0.5 hover:bg-steel">View Projects</a>
+                        <a href="#certifications" class="rounded-md border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:border-slate-400">View Certificates</a>
+                        <a href="assets/Danish-Garg-Resume.pdf" download class="rounded-md border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:border-slate-400">Download Resume</a>
+                    </div>
+                    <div class="profile-tags mt-7">
+                        <span>Python</span>
+                        <span>Computer Vision</span>
+                        <span>RAG</span>
+                        <span>LLMs</span>
+                        <span>Automation</span>
+                    </div>
+                    <div class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-slate-600">
+                        <a href="mailto:danish.garg@s.amity.edu" class="inline-flex items-center gap-2 hover:text-ink"><i class="fas fa-envelope text-ember"></i>danish.garg@s.amity.edu</a>
+                        <a href="tel:+917740068217" class="inline-flex items-center gap-2 hover:text-ink"><i class="fas fa-phone text-mint"></i>+91 77400 68217</a>
+                        <a href="https://github.com/Danish78865" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 hover:text-ink"><i class="fab fa-github text-ink"></i>GitHub</a>
+                        <span class="inline-flex items-center gap-2"><i class="fas fa-location-dot text-steel"></i>Mohali, India</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="portfolio-panel profile-card">
+                        <div class="profile-photo-wrap">
+                            <img src="assets/danish-garg-photo-enhanced.png" alt="Portrait of Danish Garg" class="profile-photo">
+                        </div>
+                        <div class="profile-details">
+                            <div class="text-center">
+                                <p class="text-sm font-semibold text-slate-500">Personal Portfolio</p>
+                                <h2 class="mt-1 text-2xl font-extrabold">Danish Garg</h2>
+                                <p class="mt-1 text-sm font-semibold text-slate-500">CSE student from Mohali, India</p>
+                            </div>
+                            <div class="mt-5 grid grid-cols-3 gap-2 text-center">
+                                <div class="mini-stat"><strong>AI/ML</strong><span>Focus</span></div>
+                                <div class="mini-stat"><strong>13+</strong><span>Certificates</span></div>
+                                <div class="mini-stat"><strong>2026</strong><span>CSE</span></div>
+                            </div>
+                            <div class="profile-note">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Building a foundation in ML, deep learning, LLMs, databases, and automation.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-band bg-white">
+            <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
+                <div>
+                    <p class="section-kicker">About</p>
+                    <h2 class="section-title">Curious about intelligent systems and practical problem solving.</h2>
+                </div>
+                <div class="space-y-5 text-lg leading-8 text-slate-600">
+                    <p>I am pursuing Computer Science and Engineering at Amity University, Mohali. My work sits around applied machine learning, computer vision, generative AI, RAG systems, agents, and automation workflows.</p>
+                    <p>I enjoy projects where the technical model is only one part of the solution. The work becomes interesting to me when data preparation, model training, evaluation, interfaces, and user experience come together into something people can actually use.</p>
+                    <p>Alongside technical work, I have spent years teaching Mathematics, English, and Coding. That experience has shaped how I learn, explain, debug, and communicate ideas with patience and structure.</p>
+                    <div class="about-focus-grid">
+                        <div class="about-focus"><i class="fas fa-eye"></i><h3>Computer Vision</h3><p>Detection, classification, image processing, and model evaluation.</p></div>
+                        <div class="about-focus"><i class="fas fa-comments"></i><h3>Generative AI</h3><p>LLMs, RAG pipelines, agents, prompt workflows, and automation.</p></div>
+                        <div class="about-focus"><i class="fas fa-chalkboard-user"></i><h3>Teaching Mindset</h3><p>Clear explanations, steady problem solving, and strong fundamentals.</p></div>
+                    </div>
+                    <div class="grid gap-4 pt-4 sm:grid-cols-3">
+                        <div class="stat-box"><strong>7/10</strong><span>Current CGPA</span></div>
+                        <div class="stat-box"><strong>100+</strong><span>Students tutored</span></div>
+                        <div class="stat-box"><strong>13+</strong><span>Certificates earned</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-band">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8">
+                <p class="section-kicker">Experience</p>
+                <h2 class="section-title max-w-3xl">Hands-on learning through internships, AI projects, and teaching.</h2>
+                <div class="experience-timeline mt-10">
+                    <article class="timeline-card">
+                        <div>
+                            <p class="text-sm font-bold text-ember">June 2025 - Aug 2025</p>
+                            <h3>Generative AI, RAG & Automation Intern</h3>
+                            <p>IIT Jammu</p>
+                            <div class="timeline-tags"><span>RAG</span><span>OpenAI APIs</span><span>CrewAI</span><span>n8n</span></div>
+                        </div>
+                        <ul>
+                            <li>Designed RAG pipelines for document-based question answering using embeddings and vector databases.</li>
+                            <li>Built OpenAI API applications for summarization, analysis, and conversational workflows.</li>
+                            <li>Created automation workflows with n8n and multi-agent systems using CrewAI.</li>
+                            <li>Explored how generative AI systems can turn documents and repetitive tasks into usable workflows.</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-card">
+                        <div>
+                            <p class="text-sm font-bold text-ember">July 2024 - Aug 2024</p>
+                            <h3>Machine Learning & Deep Learning Intern</h3>
+                            <p>CDAC, Mohali</p>
+                            <div class="timeline-tags"><span>YOLO</span><span>CNN</span><span>GUI</span><span>Model Evaluation</span></div>
+                        </div>
+                        <ul>
+                            <li>Developed a traffic sign recognition system using YOLO for detection and CNN-based classification.</li>
+                            <li>Handled preprocessing, training, evaluation, and optimization for stronger model performance.</li>
+                            <li>Built a GUI application for real-time detection and classification results.</li>
+                            <li>Learned how to connect computer vision models with an interface that makes results easy to inspect.</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-card">
+                        <div>
+                            <p class="text-sm font-bold text-ember">Jan 2018 - Dec 2024</p>
+                            <h3>Private Tutor</h3>
+                            <p>Self-employed, Mohali</p>
+                            <div class="timeline-tags"><span>Mentoring</span><span>Coding Basics</span><span>Mathematics</span></div>
+                        </div>
+                        <ul>
+                            <li>Taught Mathematics, English, and Coding to more than 100 high school students.</li>
+                            <li>Used diagnostic assessments to identify learning gaps and personalize instruction.</li>
+                            <li>Mentored students in coding fundamentals, exams, and admissions preparation.</li>
+                            <li>Built communication skills through years of explaining difficult topics in a simple way.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section-band bg-white">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8">
+                <p class="section-kicker">Education</p>
+                <h2 class="section-title max-w-3xl">Academic foundation in computer science, mathematics, and problem solving.</h2>
+                <div class="mt-10 grid gap-5 lg:grid-cols-3">
+                    <article class="education-card">
+                        <span>2022 - 2026</span>
+                        <h3>Amity University, Mohali</h3>
+                        <p>Bachelor of Engineering in Computer Science and Engineering</p>
+                        <strong>CGPA: 7 / 10</strong>
+                        <div class="education-tags"><span>OOP</span><span>Algorithms</span><span>Computer Networks</span><span>Data Mining</span></div>
+                    </article>
+                    <article class="education-card">
+                        <span>2020 - 2022</span>
+                        <h3>CISCE</h3>
+                        <p>Senior Secondary Education</p>
+                        <strong>74%</strong>
+                        <div class="education-tags"><span>Mathematics</span><span>Analytical Thinking</span><span>Science Foundation</span></div>
+                    </article>
+                    <article class="education-card">
+                        <span>2018 - 2020</span>
+                        <h3>CISCE</h3>
+                        <p>Secondary Education</p>
+                        <strong>82%</strong>
+                        <div class="education-tags"><span>Core Academics</span><span>Communication</span><span>Discipline</span></div>
+                    </article>
+                </div>
+                <div class="coursework-panel mt-8">
+                    <h3>Relevant Coursework</h3>
+                    <p>Digital Electronics, Object Oriented Programming, Operating Systems, Computer Architecture, Analysis and Design of Algorithms, Theory of Computation, Computer Networks, Data Mining and Analysis, Calculus, Linear Algebra, Differential Equations, and Probability Theory.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-band">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+                    <div>
+                        <p class="section-kicker">Projects</p>
+                        <h2 class="section-title">Featured machine learning work.</h2>
+                    </div>
+                    <p class="max-w-xl text-slate-600">A few projects that reflect my interest in computer vision, sequence modeling, transfer learning, and anomaly detection.</p>
+                </div>
+                <div class="mt-10 grid gap-6 lg:grid-cols-3">
+                    <article class="project-card">
+                        <div class="project-icon bg-slate-900 text-mint"><i class="fas fa-user-shield"></i></div>
+                        <h3>Deepfake Video Detection</h3>
+                        <p>Built to help identify manipulated facial videos by combining spatial frame features with temporal sequence patterns.</p>
+                        <ul class="project-points">
+                            <li>CNN + LSTM model architecture</li>
+                            <li>Temporal attention for anomaly scoring</li>
+                            <li>Tested across compression levels</li>
+                        </ul>
+                        <div class="tag-row"><span>CNN</span><span>LSTM</span><span>FaceForensics++</span></div>
+                        <strong>93%+ accuracy</strong>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-icon bg-teal-600 text-white"><i class="fas fa-leaf"></i></div>
+                        <h3>Plant Disease Detection</h3>
+                        <p>Designed for early disease identification from leaf images so agricultural decisions can happen sooner.</p>
+                        <ul class="project-points">
+                            <li>ResNet50 transfer learning pipeline</li>
+                            <li>Real-world agricultural image dataset</li>
+                            <li>High-accuracy disease classification</li>
+                        </ul>
+                        <div class="tag-row"><span>ResNet50</span><span>CNN</span><span>Transfer Learning</span></div>
+                        <strong>97% accuracy</strong>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-icon bg-orange-500 text-white"><i class="fas fa-credit-card"></i></div>
+                        <h3>Online Payment Fraud Detection</h3>
+                        <p>Created a transaction scoring pipeline to flag risky activity while reducing unnecessary false alarms.</p>
+                        <ul class="project-points">
+                            <li>Handled class imbalance with SMOTE</li>
+                            <li>Under-sampling for precision improvement</li>
+                            <li>Real-time scoring pipeline design</li>
+                        </ul>
+                        <div class="tag-row"><span>Machine Learning</span><span>SMOTE</span><span>Anomaly Detection</span></div>
+                        <strong>90% detection accuracy</strong>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-band">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8">
+                <p class="section-kicker">Skills</p>
+                <h2 class="section-title">Technical skills from my projects, resume, and certificates.</h2>
+                <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="skill-card"><i class="fab fa-python"></i><h3>Programming</h3><p>Python, C, C++, MATLAB</p></div>
+                    <div class="skill-card"><i class="fas fa-brain"></i><h3>ML & Deep Learning</h3><p>TensorFlow, PyTorch, Scikit-Learn, CNNs, LSTMs, ResNet50</p></div>
+                    <div class="skill-card"><i class="fas fa-eye"></i><h3>Computer Vision</h3><p>Image processing, image compression, YOLO, classification, anomaly detection</p></div>
+                    <div class="skill-card"><i class="fas fa-chart-simple"></i><h3>Data & Analysis</h3><p>NumPy, Pandas, Matplotlib, preprocessing, SMOTE, model evaluation</p></div>
+                    <div class="skill-card"><i class="fas fa-database"></i><h3>Databases</h3><p>MySQL, SQL fundamentals, vector databases for RAG workflows</p></div>
+                    <div class="skill-card"><i class="fas fa-comments"></i><h3>LLMs & Generative AI</h3><p>Transformers, LLM fundamentals, fine-tuning basics, prompt engineering</p></div>
+                    <div class="skill-card"><i class="fas fa-diagram-project"></i><h3>AI Workflows</h3><p>OpenAI APIs, RAG, CrewAI, MCP fundamentals, agents, n8n automation</p></div>
+                    <div class="skill-card"><i class="fas fa-code"></i><h3>Developer Tools</h3><p>Git, GitHub, AI-assisted coding, Replit workflows, GUI-based applications</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section-band bg-white">
+            <div class="mx-auto max-w-7xl px-5 lg:px-8">
+                <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+                    <div>
+                        <p class="section-kicker">Certificates</p>
+                        <h2 class="section-title">Courses and certifications.</h2>
+                    </div>
+                    <p class="max-w-xl text-slate-600">A growing collection of certificates from courses and tools I have completed while learning programming, databases, image processing, and AI workflows.</p>
+                </div>
+                <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <a class="certificate-card" href="assets/certificates/how-transformer-llms-work.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>DeepLearning.AI</span>
+                        <h3>How Transformer LLMs Work</h3>
+                        <p>Short course on transformer architecture and how modern LLMs work.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/vibe-coding-101.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>DeepLearning.AI</span>
+                        <h3>Vibe Coding 101 with Replit</h3>
+                        <p>Building and deploying apps with an AI coding agent in a web development environment.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/llm-fundamentals.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Hugging Face</span>
+                        <h3>Fundamentals of LLMs</h3>
+                        <p>Foundational concepts from The LLM Course.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/llm-fine-tuning.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Hugging Face</span>
+                        <h3>Fine-tuning Language Models</h3>
+                        <p>Certificate of achievement from The LLM Course.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/agents-fundamentals.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Hugging Face</span>
+                        <h3>Fundamentals of Agents</h3>
+                        <p>Foundations of agents from the Hugging Face Agents Course.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/mcp-fundamentals.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Hugging Face</span>
+                        <h3>Fundamentals of MCP</h3>
+                        <p>Unit 1 certificate from The MCP Course.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/deep-learning-for-developers.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Deep Learning</span>
+                        <h3>Deep Learning for Developers</h3>
+                        <p>Developer-focused deep learning course certificate.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/image-compression-simplified.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-file-image"></i>
+                        <span>Image Processing</span>
+                        <h3>Image Compression Simplified</h3>
+                        <p>Certificate covering image compression concepts.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/python-certification.pdf" target="_blank" rel="noreferrer">
+                        <i class="fab fa-python"></i>
+                        <span>Programming</span>
+                        <h3>Python Certification</h3>
+                        <p>Python fundamentals and programming practice.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/mysql-certificate.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-database"></i>
+                        <span>Database</span>
+                        <h3>MySQL Certificate</h3>
+                        <p>Relational database concepts and SQL foundations.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/matlab-certificate.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-square-root-variable"></i>
+                        <span>MATLAB</span>
+                        <h3>MATLAB Certificate</h3>
+                        <p>MATLAB environment, computation, and technical workflows.</p>
+                    </a>
+                    <a class="certificate-card" href="assets/certificates/matlab-image-processing-onramp.pdf" target="_blank" rel="noreferrer">
+                        <i class="fas fa-image"></i>
+                        <span>Image Processing</span>
+                        <h3>MATLAB Image Processing Onramp</h3>
+                        <p>Introductory image processing concepts with MATLAB.</p>
+                    </a>
+                    <div class="certificate-card">
+                        <i class="fas fa-robot"></i>
+                        <span>Automation</span>
+                        <h3>n8n Automation Certification</h3>
+                        <p>Level 1 and Level 2 automation certification.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-band bg-ink text-white">
+            <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1fr_.85fr] lg:px-8">
+                <div>
+                    <p class="section-kicker text-teal-300">Contact</p>
+                    <h2 class="text-4xl font-extrabold tracking-tight md:text-5xl">Let us connect and build something useful.</h2>
+                    <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-300">I am always open to meaningful conversations around AI, machine learning, automation, internships, project collaborations, and learning opportunities.</p>
+                    <div class="contact-highlights mt-8">
+                        <div><strong>Interested in</strong><span>AI/ML internships, research-style projects, automation workflows</span></div>
+                        <div><strong>Based in</strong><span>Mohali, India</span></div>
+                        <div><strong>Best way to reach me</strong><span>Email or GitHub</span></div>
+                    </div>
+                </div>
+                <div class="contact-panel">
+                    <div class="space-y-4">
+                        <a class="contact-row" href="mailto:danish.garg@s.amity.edu">
+                            <i class="fas fa-envelope"></i>
+                            <span><strong>Email</strong>danish.garg@s.amity.edu</span>
+                        </a>
+                        <a class="contact-row" href="tel:+917740068217">
+                            <i class="fas fa-phone"></i>
+                            <span><strong>Phone</strong>+91 77400 68217</span>
+                        </a>
+                        <a class="contact-row" href="https://github.com/Danish78865" target="_blank" rel="noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span><strong>GitHub</strong>github.com/Danish78865</span>
+                        </a>
+                        <span class="contact-row">
+                            <i class="fas fa-location-dot"></i>
+                            <span><strong>Location</strong>Mohali, India</span>
+                        </span>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="mailto:danish.garg@s.amity.edu?subject=Portfolio%20Connection%20-%20Danish%20Garg" class="contact-primary">Send Email</a>
+                        <a href="assets/Danish-Garg-Resume.pdf" download class="contact-secondary">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white px-5 py-8 text-center text-sm font-medium text-slate-500">
+        <p>&copy; 2026 Danish Garg. Built for practical AI and machine learning work.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
